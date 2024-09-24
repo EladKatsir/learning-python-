@@ -1,0 +1,12 @@
+def seven_boom(end_number):
+    result = []
+    for num in range(end_number + 1):
+        digit = 7
+        if num % 7 == 0:
+            result.append("BOOM")
+        elif str(digit) in str(num):
+            result.append("BOOM")
+        else:
+            result.append(num)
+    print(result)
+seven_boom(17)
